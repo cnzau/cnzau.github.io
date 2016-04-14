@@ -1,0 +1,4 @@
+# My Life
+
+I am a Kenyan youth in the middle twenties with a commitment in doing all that is, positively possible, to achieve the best in life and bring change to this world, which i will be remembered for even after my last breath.
+My life began in humble beginings in the early ninties in a village in the upcountry where i stayed for a very short time before i became a tourist moving from one place to another depending on where my dad was being sent to serve the nation. In my whole life i only new the existence of 2 kinds of careers or proffesions, being a priest or working for the armed forces.
