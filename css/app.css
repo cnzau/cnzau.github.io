@@ -31,3 +31,10 @@ ul.none {
 ul.square {
     list-style-type: square;
 }
+
+footer {
+    background-image: url(../img/fake_brick.png);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
