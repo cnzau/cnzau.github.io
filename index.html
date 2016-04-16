@@ -6,24 +6,26 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Clement Nzau Timothy personal website with bio, resume, portfolio, links to social accounts and blog.">
-	<meta name="keywords" content="Web-developer, Full stack developer, HTML, HTML5, CSS, CSS3, Javascript, Python, PHP, C, C#, XAML, Android, Windows Phone, Developer, Website design, Database design, MySQL, MongoDB, Bio, Portfolio, Resume, Contact, Blog">
+    <meta name="keywords" content="Web-developer, Full stack developer, HTML, HTML5, CSS, CSS3, Javascript, Python, PHP, C, C#, XAML, Android, Windows Phone, Developer, Website design, Database design, MySQL, MongoDB, Bio, Portfolio, Resume, Contact, Blog">
     <meta name="author" content="Clement Nzau Timothy">
     <title>Clement Nzau | Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
     <section class="expanded row" id="head">
-        <div class="small-3 medium-3 large-3 columns" id="img">
+        <div class="hide-for-small-only medium-3 large-3 columns" id="img">
             <img class="pic" src="img/img01.jpg">
         </div>
-        <div class="small-9 medium-9 large-9 columns">
-            <h1 class="name">Clement Nzau Timothy</h1>
+        <div class="small-12 medium-9 large-9 columns text-center">
+            <span class="name">Clement Nzau Timothy</span>
         </div>
     </section>
 
     <section class="expanded row collapse">
+
         <div class="small-1 medium-3 large-3 columns">
             <ul class="tabs vertical" id="left-sidebar" data-tabs>
                 <li class="tabs-title" id="tabs-title"><a href="#bio"><i class="fa fa-user" aria-hidden="true"></i><span>Bio</span></a></li>
@@ -40,13 +42,73 @@
                 </div>
                 <div class="tabs-panel" id="resume">
                     <h2>Skills</h2>
+                    <div class="row">
+                        <ul class="none small-up-1 medium-up-3 large-up-3 columns">
+                            <li>
+                                <h5>Front End</h5>
+                                <ul class="circle">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Back End</h5>
+                                <ul class="circle">
+                                    <li>PHP</li>
+                                    <li>NodeJs</li>
+                                    <li>Python</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Data-Bases</h5>
+                                <ul class="circle">
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                     <h2>Education</h2>
+                    <ul class="circle">
+                        <li>Mobile Software Development and Entrepreneurship</li>
+                        <li>BSc. Computer Science</li>
+                    </ul>
                 </div>
                 <div class="tabs-panel" id="portfolio">
-                    <h2>Click to view full site.</h2>
+                    <p>Click to view.</p>
                 </div>
                 <div class="tabs-panel" name="contacts" id="contact">
-                    Email form
+                    <form id="contact-form" method="post" action="#">
+                        <div class="row">
+                            <div class="small-12 medium-12 large-12 columns">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Name</label>
+                                    <input type="text" class="form-control" id="name" name="sender_name" placeholder="Enter name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" name="sender_email" placeholder="Enter email" required="required" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-12 large-12 columns">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Message</label>
+                                    <textarea name="message" id="message" name="message" class="form-control" rows="5" required="required" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="small-6 medium-6 large-6 columns">
+                                <a class="small button" href="#">Submit</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
