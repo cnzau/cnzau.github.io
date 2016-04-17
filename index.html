@@ -16,17 +16,17 @@
 
 <body>
     <section class="expanded row" id="head">
-        <div class="hide-for-small-only medium-3 large-3 columns" id="img">
+        <div class="hide-for-small-only medium-offset-1 medium-2 large-offset-1 large-2 text-center columns" id="img">
             <img class="pic" src="img/img01.jpg">
         </div>
-        <div class="small-12 medium-9 large-9 columns text-center">
+        <div class="small-12 medium-8 large-8 columns text-center">
             <span class="name">Clement Nzau Timothy</span>
         </div>
     </section>
 
-    <section class="expanded row collapse">
+    <section class="expanded row collapse" id="body">
 
-        <div class="small-1 medium-3 large-3 columns">
+        <div class="small-1 medium-offset-1 medium-2 large-offset-1 large-2 columns">
             <ul class="tabs vertical" id="left-sidebar" data-tabs>
                 <li class="tabs-title" id="tabs-title"><a href="#bio"><i class="fa fa-user" aria-hidden="true"></i><span>Bio</span></a></li>
                 <li class="tabs-title" id="tabs-title"><a href="#resume"><i class="fa fa-files-o" aria-hidden="true"></i><span>Resume</span></a></li>
@@ -35,7 +35,7 @@
             </ul>
         </div>
 
-        <div class="small-11 medium-9 large-9 columns">
+        <div class="small-11 medium-8 large-8 columns">
             <div class="tabs-content verticle" data-tabs-content="left-sidebar">
                 <div class="tabs-panel" id="bio">
                     <p>I am a software developer with interest in entrepreneurship.</p>
@@ -43,8 +43,8 @@
                 <div class="tabs-panel" id="resume">
                     <h2>Skills</h2>
                     <div class="row">
-                        <ul class="none small-up-1 medium-up-3 large-up-3 columns">
-                            <li>
+                        <ul class="none row small-up-1 medium-up-3 large-up-4">
+                            <li class="column">
                                 <h5>Front End</h5>
                                 <ul class="circle">
                                     <li>HTML</li>
@@ -52,7 +52,7 @@
                                     <li>JavaScript</li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="column">
                                 <h5>Back End</h5>
                                 <ul class="circle">
                                     <li>PHP</li>
@@ -60,11 +60,18 @@
                                     <li>Python</li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="column">
                                 <h5>Data-Bases</h5>
                                 <ul class="circle">
                                     <li>MySQL</li>
                                     <li>MongoDB</li>
+                                </ul>
+                            </li>
+                            <li class="column">
+                                <h5>Others</h5>
+                                <ul class="circle">
+                                    <li>Adobe(Ps, Ai, Dw)</li>
+                                    <li>Soft-Skills</li>
                                 </ul>
                             </li>
                         </ul>
@@ -79,7 +86,7 @@
                     <p>Click to view.</p>
                 </div>
                 <div class="tabs-panel" name="contacts" id="contact">
-                    <form id="contact-form" method="post" action="#">
+                    <form id="contact-form" method="post" action="php/mail.php">
                         <div class="row">
                             <div class="small-12 medium-12 large-12 columns">
                                 <div class="form-group">
@@ -105,7 +112,7 @@
                                 </div>
                             </div>
                             <div class="small-6 medium-6 large-6 columns">
-                                <a class="small button" href="#">Submit</a>
+                                <button type="submit" class="small button" id="">Send mail</button>
                             </div>
                         </div>
                     </form>

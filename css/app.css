@@ -1,10 +1,24 @@
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 #head {
     background-image: url(../img/fake_brick.png);
+    height: 20vh;
+}
+
+#body {
+    height: 80vh;
+}
+
+.kichwa {
+    background: #fff url(2-green/dot_bg.png) repeat left top;
+    
+    height: 100%;
+}
+
+#left-sidebar {
 }
 
 .pic {
@@ -34,7 +48,8 @@ ul.square {
 
 footer {
     background-image: url(../img/fake_brick.png);
-    position: fixed;
-    bottom: 0;
+    /*position: fixed;*/
+    /*bottom: 0;*/
     width: 100%;
+    height: 20%;
 }
