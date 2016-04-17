@@ -13,12 +13,14 @@ body {
 }
 
 .kichwa {
-    background: #fff url(2-green/dot_bg.png) repeat left top;
+    background: #fff url(../img/dot_bg.png) repeat left top;
     
     height: 100%;
 }
 
 #left-sidebar {
+    background: none;
+    border-style: none;
 }
 
 .pic {
