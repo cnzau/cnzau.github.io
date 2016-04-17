@@ -23,6 +23,14 @@ body {
     border-style: none;
 }
 
+.mwili {
+    background: #fff url(../img/diamond_upholstery.png) repeat left top;
+    height: 100%;
+}
+#mwili {
+    background: none;
+}
+
 .pic {
     height: 5em;
     width: 5em;
