@@ -21,6 +21,7 @@ body {
 #left-sidebar {
     background: none;
     border-style: none;
+    position: fixed;
 }
 
 .mwili {
