@@ -12,12 +12,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app2.css">
 </head>
 
 <body>
-    <div class="intro">
-        <section class="expanded row collapse" id="head">
+    <section class="expanded row" id="head0" data-sticky-container>
+        <div class="small-12 medium-12 large-12 columns sticky" id="head" data-sticky data-margin-top="0">
             <div class="small-12 medium-2 large-2 columns text-center" id="cooking">
                 <p>My</p>
                 <p><span>new website</span></p>
@@ -26,14 +26,13 @@
             <div class="small-12 medium-10 large-10 columns text-center">
                 <h1 class="myName">Clement Nzau Timothy</h1>
             </div>
-        </section>
-        <section class="intro-img hides">
-            <img class="my-img" src="img/clementTRANS.png" alt="">
-        </section>
-        <section class="myContent">
-            <section class="expanded row collapse" id="body">
-                <div class="small-2 medium-2 large-2 columns kichwa">
-                    <div class="expanded row collapse k_overlay">
+        </div>
+    </section>
+    <section class="myContent">
+        <section class="expanded row collapse" id="body">
+            <div class="small-2 medium-2 large-2 columns kichwa">
+                <div class="expanded row collapse k_overlay" id="k_overlay" data-sticky-container>
+                    <div class="sticky navs" data-sticky data-btm-anchor="head0:bottom" id="navs">
                         <ul class="tabs vertical small-2 medium-2 large-2 columns" id="left-sidebar" data-tabs>
                             <li class="tabs-title is-active" id="tabs-title"><a href="#bio"><i class="fa fa-user" aria-hidden="true"></i><span>Bio</span></a></li>
                             <li class="tabs-title" id="tabs-title"><a href="#resume"><i class="fa fa-files-o" aria-hidden="true"></i><span>Resume</span></a></li>
@@ -42,159 +41,179 @@
                         </ul>
                     </div>
                 </div>
-                <div class="small-10 medium-10 large-10 columns mwili">
-                    <div class="small-12 medium-12 large-12 columns">
-                        <div class="tabs-content verticle" id="mwili" data-tabs-content="left-sidebar">
-                            <div class="tabs-panel is-active" id="bio">
-                                <h2>About Me</h2>
-                                <ul class="square">
-                                    <li>
-                                        A responsible, organized and self-driven software engineer, with dedication to:
+                <div class="expanded row collapse k_overlay1" id="k_overlay1" data-sticky-container>
+                    <div class="sticky navs" data-sticky data-stick-to="bottom" data-btm-anchor="k_overlay:bottom" id="navs">
+                        <ul class="menu row small-up-1 medium-up-3 large-up-3 expanded" id="foots">
+                            <li class="column">
+                                <a href="https://www.facebook.com/nzauclement" target="_BLANK">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="column">
+                                <a href="https://twitter.com/clement_nzau" target="_BLANK">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="column">
+                                <a href="https://ke.linkedin.com/in/clement-nzau-24400476" target="_BLANK">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="column">
+                                <a href="https://github.com/cnzau" target="_BLANK">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="column">
+                                <a href="http://stackoverflow.com/users/6154384/c-nzau" target="_BLANK">
+                                    <i class="fa fa-stack-overflow" aria-hidd en="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="small-10 medium-10 large-10 columns mwili">
+                <div class="small-12 medium-12 large-12 columns">
+                    <div class="tabs-content verticle" id="mwili" data-tabs-content="left-sidebar">
+                        <div class="tabs-panel is-active" id="bio">
+                            <h2>About Me</h2>
+                            <ul class="square">
+                                <li>
+                                    A responsible, organized and self-driven software engineer, with dedication to:
+                                    <ul class="circle">
+                                        <li>Building quality and maintainable software products.</li>
+                                        <li>Clear communication and presentation of information.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    I develop web and mobile applications.
+                                </li>
+                                <li>
+                                    I prefer being in a pro-active and dynamic working environment that offers growth and progression.
+                                </li>
+                            </ul>
+                            <h5>When not developing, I will either be:</h5>
+                            <ul>
+                                <li>Spending time with family and friends</li>
+                                <li>Listening to podcasts</li>
+                                <li>Watching documentaries</li>
+                                <li>Listening and watching music</li>
+                                <li>Watching a movie or a series</li>
+                                <li>Watching youtube-car-videos <i>(What is under the hood?)</i></li>
+                            </ul>
+                        </div>
+                        <div class="tabs-panel" id="resume">
+                            <h2>Skills</h2>
+                            <div class="row expanded">
+                                <ul class="none row small-up-1 medium-up-3 large-up-4 expanded">
+                                    <li class="column">
+                                        <h5>Front End</h5>
                                         <ul class="circle">
-                                            <li>Building quality and maintainable software products.</li>
-                                            <li>Clear communication and presentation of information.</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        I develop web and mobile applications.
+                                    <li class="column">
+                                        <h5>Back End</h5>
+                                        <ul class="circle">
+                                            <li>PHP</li>
+                                            <li>NodeJs</li>
+                                            <li>Python</li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        I prefer being in a pro-active and dynamic working environment that offers growth and progression.
+                                    <li class="column">
+                                        <h5>Data-Bases</h5>
+                                        <ul class="circle">
+                                            <li>MySQL</li>
+                                            <li>MongoDB</li>
+                                        </ul>
                                     </li>
-                                </ul>
-                                <h5>When not developing, I will either be:</h5>
-                                <ul>
-                                    <li>Spending time with family and friends</li>
-                                    <li>Listen to podcasts</li>
-                                    <li>Watching documentaries</li>
-                                    <li>Listening and watching music</li>
-                                    <li>Watching a movie or a series</li>
-                                    <li>Watching youtube-car-videos <i>(What is under the hood?)</i></li>
+                                    <li class="column">
+                                        <h5>Others</h5>
+                                        <ul class="circle">
+                                            <li>Adobe(Ps, Ai, Dw)</li>
+                                            <li>Soft-Skills</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="tabs-panel" id="resume">
-                                <h2>Skills</h2>
-                                <div class="row expanded">
-                                    <ul class="none row small-up-1 medium-up-3 large-up-4 expanded">
-                                        <li class="column">
-                                            <h5>Front End</h5>
-                                            <ul class="circle">
-                                                <li>HTML</li>
-                                                <li>CSS</li>
-                                                <li>JavaScript</li>
-                                            </ul>
-                                        </li>
-                                        <li class="column">
-                                            <h5>Back End</h5>
-                                            <ul class="circle">
-                                                <li>PHP</li>
-                                                <li>NodeJs</li>
-                                                <li>Python</li>
-                                            </ul>
-                                        </li>
-                                        <li class="column">
-                                            <h5>Data-Bases</h5>
-                                            <ul class="circle">
-                                                <li>MySQL</li>
-                                                <li>MongoDB</li>
-                                            </ul>
-                                        </li>
-                                        <li class="column">
-                                            <h5>Others</h5>
-                                            <ul class="circle">
-                                                <li>Adobe(Ps, Ai, Dw)</li>
-                                                <li>Soft-Skills</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                            <h2>Education</h2>
+                            <ul class="circle">
+                                <li>Mobile Software Development and Entrepreneurship</li>
+                                <li>BSc. Computer Science</li>
+                            </ul>
+                        </div>
+                        <div class="tabs-panel row small-up-1 medium-up-2 large-up-2" id="portfolio">
+                            <a href="http://www.pawatele.com/" target="_BLANK">
+                                <div class="column proj">
+                                    <img src="img/pawateleltd.png">
                                 </div>
-                                <h2>Education</h2>
-                                <ul class="circle">
-                                    <li>Mobile Software Development and Entrepreneurship</li>
-                                    <li>BSc. Computer Science</li>
-                                </ul>
-                            </div>
-                            <div class="tabs-panel row small-up-1 medium-up-2 large-up-2" id="portfolio">
-                                <a href="http://www.pawatele.com/" target="_BLANK">
-                                    <div class="column proj">
-                                        <img src="img/pawateleltd.png">
-                                    </div>
-                                </a>
-                                <a href="http://c-r-m.herokuapp.com/" target="_BLANK">
-                                    <div class="column proj">
-                                        <img src="img/crm.png">
-                                    </div>
-                                </a>
-                                <a href="http://www.emed.co.ke/" target="_BLANK">
-                                    <div class="column proj">
-                                        <img src="img/emed.png">
-                                    </div>
-                                </a>
-                                <a href="http://bit.ly/28wllV8" target="_BLANK">
-                                    <div class="column proj">
-                                        <img src="img/nganya_icon.png">
-                                    </div>
-                                </a>
-                                <a href="https://github.com/cnzau/SmartFlash" target="_BLANK">
-                                    <div class="column proj">
-                                        <img src="img/switch_on.png">
-                                    </div>
-                                </a>
-                                <a href="http://bit.ly/1Uaz1L6" target="_BLANK">
-                                    <div class="column proj">
-                                        <img src="img/simple_to_do.png">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="tabs-panel" name="contacts" id="contact">
-                                <form id="contact-form" method="post" action="http://clementnzau.mobwebz.co.ke/mail.php">
-                                    <div class="row">
-                                        <div class="small-12 medium-12 large-12 columns">
-                                            <div class="form-group">
-                                                <label for="name">
-                                                    Name</label>
-                                                <input type="text" class="form-control" id="name" name="sender_name" placeholder="Enter name" required="required" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="email">
-                                                    Email Address</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                                    </span>
-                                                    <input type="email" class="form-control" id="email" name="sender_email" placeholder="Enter email" required="required" />
-                                                </div>
+                            </a>
+                            <a href="http://c-r-m.herokuapp.com/" target="_BLANK">
+                                <div class="column proj">
+                                    <img src="img/crm.png">
+                                </div>
+                            </a>
+                            <a href="http://www.emed.co.ke/" target="_BLANK">
+                                <div class="column proj">
+                                    <img src="img/emed.png">
+                                </div>
+                            </a>
+                            <a href="http://bit.ly/28wllV8" target="_BLANK">
+                                <div class="column proj">
+                                    <img src="img/nganya_icon.png">
+                                </div>
+                            </a>
+                            <a href="https://github.com/cnzau/SmartFlash" target="_BLANK">
+                                <div class="column proj">
+                                    <img src="img/switch_on.png">
+                                </div>
+                            </a>
+                            <a href="http://bit.ly/1Uaz1L6" target="_BLANK">
+                                <div class="column proj">
+                                    <img src="img/simple_to_do.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tabs-panel" name="contacts" id="contact">
+                            <form id="contact-form" method="post" action="http://clementnzau.mobwebz.co.ke/mail.php">
+                                <div class="row">
+                                    <div class="small-12 medium-12 large-12 columns">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Name</label>
+                                            <input type="text" class="form-control" id="name" name="sender_name" placeholder="Enter name" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">
+                                                Email Address</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                </span>
+                                                <input type="email" class="form-control" id="email" name="sender_email" placeholder="Enter email" required="required" />
                                             </div>
                                         </div>
-                                        <div class="small-12 medium-12 large-12 columns">
-                                            <div class="form-group">
-                                                <label for="name">
-                                                    Message</label>
-                                                <textarea name="message" id="message" name="message" class="form-control" rows="5" required="required" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="small-6 medium-6 large-6 columns">
-                                            <button type="submit" class="small button" id="">Send mail</button>
+                                    </div>
+                                    <div class="small-12 medium-12 large-12 columns">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Message</label>
+                                            <textarea name="message" id="message" name="message" class="form-control" rows="5" required="required" placeholder="Message"></textarea>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
+                                    <div class="small-6 medium-6 large-6 columns">
+                                        <button type="submit" class="small button" id="">Send mail</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </section>
-        </section>
-        <footer class="expanded row">
-            <div class="menu-centered">
-                <ul class="menu">
-                    <li><a href="https://www.facebook.com/nzauclement" target="_BLANK"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://twitter.com/clement_nzau" target="_BLANK"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="https://ke.linkedin.com/in/clement-nzau-24400476" target="_BLANK"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/cnzau" target="_BLANK"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="http://stackoverflow.com/users/6154384/c-nzau" target="_BLANK"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
-                </ul>
             </div>
-        </footer>
-    </div>
+        </section>
+    </section>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>

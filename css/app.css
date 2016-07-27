@@ -1,11 +1,15 @@
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
 }
 #cooking {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin-top: 2rem;
+}
+.small-12#cooking {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 0.5rem auto;
 }
 #cooking p {
     margin: 0;
@@ -15,35 +19,23 @@ body {
     background-image: url(../img/fake_brick.png);
     height: auto;
     padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
 }
 
 .myName {
     margin: 4vh auto;
 }
+.small-12 .myName {
+    margin: 0.3vh;
+}
 h1.myName {
     text-shadow: -1px -2px 0 #e2e2e2;
     font-size: 88px;
 }
-.intro-img {
-    background: #fff url(../img/diamond_upholstery.png) repeat left top;
-    height: 60vh;
-}
-/*
-.div-intro-img {    
-    background-image: url(../img/clementTRANS.png);
-    position:relative;
-    height:inherit;
-    background-position: center;
-}
-*/
-
-.my-img {
-    height: 100%;
-    border-radius: 5%;
-}
 
 #body {
-    height: 80vh;
+    height: 100vh;
 }
 #cooking {
     color: #2199e8;
@@ -68,6 +60,7 @@ h1.myName {
     position: fixed;
 }
 
+
 .tabs-title.small-2 > a {
     padding: 0;
 }
@@ -81,7 +74,7 @@ h1.myName {
 
 .mwili {
     background: #fff url(../img/diamond_upholstery.png) repeat left top;
-    height: 100%;
+    min-height: 100%;
 }
 #mwili {
     background: none;
@@ -110,6 +103,16 @@ h1.myName {
     margin-bottom: auto;
     color: #2199e8;
 }
+.small-12 .myName {
+    font-size: 3.5em;
+    font-style: italic;
+    font-family: "HOLE2CUR", sans-serif;
+    letter-spacing: 0.3;
+    line-height: 0.8;
+    line-height: 0.8;
+    margin-bottom: auto;
+    color: #2199e8;
+}
 
 .hides {
     display: none;
@@ -126,13 +129,7 @@ ul.circle {
     list-style-type: circle;
 }
 
-footer {
-    background-image: url(../img/fake_brick.png);
-    /*position: fixed;*/
-    /*bottom: 0;*/
-    width: 100%;
-    height: 10vh;
-}
+
 
 /******************************************\
                 ROMBUS
@@ -154,3 +151,4 @@ footer {
     height: 30em;
     width: 100%;
 }
+
