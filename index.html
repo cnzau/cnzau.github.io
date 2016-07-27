@@ -178,7 +178,7 @@
                             </a>
                         </div>
                         <div class="tabs-panel" name="contacts" id="contact">
-                            <form id="contact-form" method="post" action="http://clementnzau.mobwebz.co.ke/mail.php">
+                            <form id="contact-form" method="post" action="https://formspree.io/clement.nzau@gmail.com">
                                 <div class="row">
                                     <div class="small-12 medium-12 large-12 columns">
                                         <div class="form-group">
@@ -192,10 +192,11 @@
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                                 </span>
-                                                <input type="email" class="form-control" id="email" name="sender_email" placeholder="Enter email" required="required" />
+                                                <input type="email" class="form-control" id="email" name="_replyto" placeholder="Enter email" required="required" />
                                             </div>
                                         </div>
                                     </div>
+                                    <input type="hidden" name="_subject" value="New submission @ cnzau.github.io" />
                                     <div class="small-12 medium-12 large-12 columns">
                                         <div class="form-group">
                                             <label for="name">
@@ -203,6 +204,8 @@
                                             <textarea name="message" id="message" name="message" class="form-control" rows="5" required="required" placeholder="Message"></textarea>
                                         </div>
                                     </div>
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                    <input type="hidden" name="_next" value="//cnzau.github.io" />
                                     <div class="small-6 medium-6 large-6 columns">
                                         <button type="submit" class="small button" id="">Send mail</button>
                                     </div>
