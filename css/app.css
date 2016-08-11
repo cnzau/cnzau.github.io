@@ -1,10 +1,20 @@
 body {
     font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+/*************************** HEADER *******************************/
+
+#head0 {
+    background-image: url(../img/fake_brick.png);
+    height: 20vh;
+    padding-bottom: 1rem;
 }
 #cooking {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin-top: 2rem;
+    color: #2199e8;
 }
 .small-12#cooking {
     background: rgba(0, 0, 0, 0.3);
@@ -15,12 +25,10 @@ body {
     margin: 0;
     line-height: 1rem;
 }
-#head0 {
-    background-image: url(../img/fake_brick.png);
-    min-height: 15%;
-    padding-bottom: 1rem;
-
+#cooking  span {
+    color: #ffffff;
 }
+
 
 .myName {
     font-size: 4em;
@@ -44,16 +52,15 @@ h1.myName {
     font-family: 'Bungee Hairline', cursive;
 }
 
+
+/******************************** SIDEBAR + CONTENT *********************************/
 #body {
-    height: 100vh;
-}
-#cooking {
-    color: #2199e8;
-}
-#cooking  span {
-    color: #ffffff;
+    height: 80vh;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.25rem;
 }
 
+/************************************ SIDEBAR ****************************************/
 .kichwa {
     background: #fff url(../img/dot_bg.png) repeat left top;
     
@@ -61,10 +68,11 @@ h1.myName {
 }
 .k_overlay {
     background: rgba(0, 0, 0, 0.9);
-    height: 60%;
+    height: 80%;
 }
 .k_overlay1 {
     background: rgba(0, 0, 0, 0.9);
+    height: 20%;
 }
 
 #left-sidebar {
@@ -90,20 +98,28 @@ h1.myName {
     background: rgba(0, 0, 0, 0.4);    
 }
 
+
+
+/********************************** CONTENT *********************************/
+
 .mwili {
     background: #fff url(../img/diamond_upholstery.png) repeat left top;
     min-height: 100%;
+    position: relative;
 }
 #mwili {
     background: none;
     border-style: none;
 }
 
-.pic {
-    height: 5em;
-    width: 5em;
-    border-radius: 50%;
-    margin: 1em;
+.proj {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+}
+
+.proj img {
+    height: 30em;
+    width: 100%;
 }
 
 .hides {
@@ -121,36 +137,16 @@ ul.circle {
     list-style-type: circle;
 }
 
-
-
-/******************************************\
-                ROMBUS
-\******************************************/
-#diamond {
-    width: auto;
-    height: auto;
-    background: #1e90ff;
-    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jura', sans-serif;
 }
 
-.proj {
-    margin-top: 1em;
-    margin-bottom: 1em;  
-}
-
-.proj img {
-    height: 30em;
-    width: 100%;
-}
-
-
-/*
+/*****************************************
 Specify fonts with:
 ---
 
 font-family: 'Share Tech Mono', monospace;
 font-family: 'Jura', sans-serif;
 font-family: 'BenchNine', sans-serif;
-font-family: 'Bungee Inline', cursive;
-*/
+font-family: 'Bungee Hairline', cursive;
+*******************************************/
