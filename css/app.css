@@ -23,14 +23,25 @@ body {
 }
 
 .myName {
+    font-size: 4em;
+    letter-spacing: 0.3;
+    line-height: 0.8;
+    margin-bottom: auto;
+    color: #2199e8;
     margin: 4vh auto;
 }
 .small-12 .myName {
+    font-size: 3.5em;
+    letter-spacing: 0.3;
+    line-height: 0.9;
+    margin-bottom: auto;
+    color: #2199e8;
     margin: 0.3vh;
 }
+
 h1.myName {
-    text-shadow: -1px -2px 0 #e2e2e2;
-    font-size: 88px;
+    font-weight: 900;
+    font-family: 'Bungee Hairline', cursive;
 }
 
 #body {
@@ -90,32 +101,6 @@ h1.myName {
     margin: 1em;
 }
 
-@font-face {
-  font-family: "HOLE2CUR";
-  src: url(../fonts/HOLE2CUR.TTF) format("truetype");
-}
-
-.myName {
-    font-size: 4em;
-    font-style: italic;
-    font-family: "HOLE2CUR", sans-serif;
-    letter-spacing: 0.3;
-    line-height: 0.8;
-    line-height: 0.8;
-    margin-bottom: auto;
-    color: #2199e8;
-}
-.small-12 .myName {
-    font-size: 3.5em;
-    font-style: italic;
-    font-family: "HOLE2CUR", sans-serif;
-    letter-spacing: 0.3;
-    line-height: 0.8;
-    line-height: 0.8;
-    margin-bottom: auto;
-    color: #2199e8;
-}
-
 .hides {
     display: none;
 }
@@ -154,3 +139,13 @@ ul.circle {
     width: 100%;
 }
 
+
+/*
+Specify fonts with:
+---
+
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Jura', sans-serif;
+font-family: 'BenchNine', sans-serif;
+font-family: 'Bungee Inline', cursive;
+*/
