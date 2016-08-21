@@ -127,7 +127,13 @@ h1.myName {
 }
 
 #foots > .column > a {
-    padding: auto;
+    padding: 0;
+    height: 2em;
+    text-align: center;
+}
+
+#foots > .column > a > i {
+    margin: 0;
 }
 
 /********************************** CONTENT *********************************/
