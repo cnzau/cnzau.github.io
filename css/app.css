@@ -126,6 +126,10 @@ h1.myName {
     background: rgba(0, 0, 0, 0.4);
 }
 
+#foots > .column > a {
+    padding: auto;
+}
+
 /********************************** CONTENT *********************************/
 
 .mwili {
