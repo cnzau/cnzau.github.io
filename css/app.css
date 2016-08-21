@@ -46,6 +46,7 @@ body {
 
 #name {
     margin-top: 0.4rem;
+    padding: 0;
 }
 
 @media only screen and (max-width: 40em) {
@@ -76,9 +77,13 @@ h1.myName {
 
 /******************************** SIDEBAR + CONTENT *********************************/
 
-#body {
-    top: 10vh;
+.myContent {
+    margin-top: 10vh;
     height: 90vh;
+}
+
+#body {
+    height: 100vh;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.25rem;
 }
@@ -89,6 +94,7 @@ h1.myName {
 .kichwa {
     background: #fff url(../img/dot_bg.png) repeat left top;
     height: 100vh;
+    
 }
 
 .k_overlay {
@@ -119,7 +125,6 @@ h1.myName {
 #tabs-title > a:hover {
     background: rgba(0, 0, 0, 0.4);
 }
-
 
 /********************************** CONTENT *********************************/
 
