@@ -158,8 +158,7 @@ h1.myName {
 #folio {
     height: 46%;
     width: 100%;
-    background-color: lightgrey;
-    box-shadow: 0.5vh 0.5vh 2.5vh 0.5vh dimgrey;
+    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(0, 0, 255, 0.3) inset, 0.5vh 0.5vh 2vh 0.6vh dimgrey;
     margin-bottom: 2%;
     border-radius: 0.3em;
 }
