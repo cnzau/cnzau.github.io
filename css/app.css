@@ -94,7 +94,7 @@ h1.myName {
 .kichwa {
     background: #fff url(../img/dot_bg.png) repeat left top;
     height: 100vh;
-    
+    position: fixed;
 }
 
 .k_overlay {
@@ -124,6 +124,11 @@ h1.myName {
 
 #tabs-title > a:hover {
     background: rgba(0, 0, 0, 0.4);
+}
+
+#navs {
+    position: fixed;
+    bottom: 0;
 }
 
 #foots > .column > a {
