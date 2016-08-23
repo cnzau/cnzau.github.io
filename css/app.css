@@ -110,6 +110,8 @@ h1.myName {
 #left-sidebar {
     background: none;
     border: none;
+    padding-right: 0;
+    padding-left: 0.15em;
 }
 
 .tabs-title.small-2 > a {
