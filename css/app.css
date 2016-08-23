@@ -154,6 +154,15 @@ h1.myName {
     border-style: none;
 }
 
+#folio {
+    height: 46%;
+    width: 100%;
+    background-color: lightgrey;    
+    box-shadow: 0.5vh 0.5vh 2.5vh 0.5vh dimgrey;
+    margin-bottom: 2%;
+    border-radius: 0.3em;
+}
+
 .proj {
     margin-top: 1em;
     margin-bottom: 1em;
