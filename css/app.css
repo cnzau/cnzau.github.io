@@ -1,3 +1,7 @@
+html {
+    overflow-y: hidden;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     height: 100%;
@@ -146,8 +150,10 @@ h1.myName {
 
 .mwili {
     background: #fff url(../img/diamond_upholstery.png) repeat left top;
-    min-height: 100%;
-    position: relative;
+    height: 90vh;
+    position: fixed;
+    bottom: 0;
+    overflow-y: auto;
 }
 
 #mwili {
