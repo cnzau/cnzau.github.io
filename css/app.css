@@ -118,18 +118,25 @@ h1.myName {
     padding: 0;
 }
 
-.tabs-title > a[aria-selected='true'] {
-    background: rgba(230, 230, 230, 0.4);
-}
-
 .tabs-title > a {
     font-family: 'BenchNine', sans-serif;
     font-size: 1rem;
     font-weight: 600;
 }
 
-#tabs-title > a:hover {
+.tabs-title > a[aria-selected='true'] {
+    background: rgba(230, 230, 230, 0.4);
+}
+
+.tabs-title > a:hover {
     background: rgba(0, 0, 0, 0.4);
+}
+
+
+/*Hover when tab is selected*/
+
+.tabs-title > a[aria-selected='true']:hover {
+    background: rgba(230, 230, 230, 0.4);
 }
 
 #navs {
