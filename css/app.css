@@ -114,13 +114,24 @@ h1.myName {
     padding-left: 0.15em;
 }
 
-.tabs-title.small-2 > a {
-    padding: 0;
+/*Small screens, max-width 640px*/
+
+@media only screen and (max-width: 40em) {
+    .tabs-title > a {
+        font-size: 0.75em;
+        padding-left: 0.5em;
+        padding-right: 0;
+        height: 3.5em;
+    }
+    .tabs-title > a > span:before {
+        content: "\a";
+        white-space: pre;
+    }
 }
+
 
 .tabs-title > a {
     font-family: 'BenchNine', sans-serif;
-    font-size: 1rem;
     font-weight: 600;
 }
 
