@@ -120,9 +120,9 @@ h1.myName {
 @media only screen and (max-width: 40em) {
     .tabs-title > a {
         font-size: 0.75em;
-        padding-left: 0.5em;
-        padding-right: 0;
-        height: 3.5em;
+        padding: 0;
+        height: 2.5em;
+        line-height: 0.8em;
     }
     .tabs-title > a > span:before {
         content: "\a";
@@ -187,9 +187,20 @@ h1.myName {
     bottom: 0;
 }
 
+@media only screen and (max-width: 40em) {
+    #foots > .column > a {
+        height: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 40.063em) {
+    #foots > .column > a {
+        height: 2em;
+    }
+}
+
 #foots > .column > a {
     padding: 0;
-    height: 2em;
     text-align: center;
 }
 
