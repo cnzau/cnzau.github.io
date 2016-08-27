@@ -171,15 +171,25 @@ h1.myName {
 /*Large screens, min-width 1025px*/
 
 @media only screen and (min-width: 64.063em) {
-    .tabs-title > a {
+    .tabs-title > a,
+    .blog > a {
         font-size: 1em;
         height: 4em;
+        line-height: 1em;
     }
-    .tabs-title > a > span:before {
+    .tabs-title > a > span:before,
+    .blog > a > span:before {
         content: "\a";
+        white-space: pre;
+    }
+    #tabs-title > a {
+        padding-top: 1em;
     }
     #left-sidebar {
         padding-left: 1em;
+    }
+    .blog > a {
+        padding-left: 1.5rem;
     }
 }
 
