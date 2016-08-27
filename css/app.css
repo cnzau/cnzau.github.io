@@ -193,7 +193,8 @@ h1.myName {
     }
 }
 
-.tabs-title > a {
+.tabs-title > a,
+.blog > a {
     font-family: 'BenchNine', sans-serif;
     font-weight: 600;
 }
@@ -202,7 +203,8 @@ h1.myName {
     background: rgba(230, 230, 230, 0.4);
 }
 
-.tabs-title > a:hover {
+.tabs-title > a:hover,
+.blog > a:hover {
     background: rgba(0, 0, 0, 0.4);
 }
 
