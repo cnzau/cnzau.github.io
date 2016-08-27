@@ -107,6 +107,9 @@ h1.myName {
     max-height: 100vh;
 }
 
+
+/********************************** TABS / NAVZ / LEFT-SIDEBAR  *********************************/
+
 #left-sidebar {
     background: none;
     border: none;
@@ -214,6 +217,9 @@ h1.myName {
 .tabs-title > a[aria-selected='true']:hover {
     background: rgba(230, 230, 230, 0.4);
 }
+
+
+/********************************** NAVS / FOOTS *********************************/
 
 #navs {
     position: fixed;
