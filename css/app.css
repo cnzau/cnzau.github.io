@@ -149,15 +149,21 @@ h1.myName {
 /*Medium screens, min-width 641px, max-width 1024px*/
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    .tabs-title > a {
+    .tabs-title > a,
+    .blog > a {
         font-size: 1em;
         padding-left: 0.9em;
         padding-right: 0;
         height: 4em;
+        line-height: 1em;
     }
-    .tabs-title > a > span:before {
+    .tabs-title > a > span:before,
+    .blog > a > span:before {
         content: "\a";
         white-space: pre;
+    }
+    #tabs-title > a {
+        padding-top: 1em;
     }
 }
 
