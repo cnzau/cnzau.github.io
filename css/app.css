@@ -114,6 +114,16 @@ h1.myName {
     padding-left: 0.15em;
 }
 
+.blog {
+    display: table;
+    width: 100%;
+}
+
+.blog > a {
+    display: table-cell;
+    width: 16.66vw;
+}
+
 
 /*Small screens, max-width 640px*/
 
