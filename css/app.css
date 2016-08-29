@@ -15,6 +15,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: 0vw 0.1vh 0.6vh 0.3vh dimgrey;
 }
 
 @supports (position: sticky) {
@@ -273,7 +274,7 @@ h1.myName {
 .folio {
     height: 46%;
     width: 100%;
-    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(0, 0, 255, 0.3) inset, 0.5vh 0.5vh 2vh 0.6vh dimgrey;
+    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(0, 0, 255, 0.3) inset;
     margin-bottom: 2%;
     border-radius: 0.3em;
     font-size: medium;
@@ -313,7 +314,7 @@ h1.myName {
     margin-bottom: 2%;
     padding: 1em;
     border-radius: 0.3em;
-    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(0, 0, 255, 0.3) inset, 0.5vh 0.5vh 2vh 0.6vh dimgrey;
+    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(0, 0, 255, 0.3) inset;
 }
 
 ul.none {
