@@ -247,6 +247,13 @@ h1.myName {
     margin: 0;
 }
 
+.cr {
+    color: #FFFFFF;
+    font-family: 'Bungee Hairline', cursive;
+    font-size: initial;
+    line-height: 0.9em;
+}
+
 
 /********************************** CONTENT *********************************/
 
