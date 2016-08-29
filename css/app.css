@@ -15,7 +15,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 10;
-    box-shadow: 0vw 0.1vh 0.6vh 0.3vh dimgrey;
+    box-shadow: 0vw 0.1vh 0.5vh 0.4vh #000;
 }
 
 @supports (position: sticky) {
@@ -184,10 +184,9 @@ h1.myName {
     .tabs-title > a > span:before,
     .blog > a > span:before {
         content: "\a";
-        white-space: pre;
     }
     #tabs-title > a {
-        padding-top: 1em;
+        padding-top: 1.5em;
     }
     #left-sidebar {
         padding-left: 1em;
