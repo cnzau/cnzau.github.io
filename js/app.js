@@ -1,11 +1,11 @@
-$(document).foundation()
-
+$(document).foundation();
+// footer copyright date
 window.onload = function myFunction() {
     var d = new Date(),
         n = d.getFullYear();
     document.getElementById("yr").innerHTML = n;
 };
-
+// animating my titles in #i_am_a
 jQuery(document).ready(function($) {
     //set animation timing
     var animationDelay = 2500,
@@ -40,7 +40,12 @@ jQuery(document).ready(function($) {
                 i;
             for (i in letters) {
                 if (word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
-                letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>' : '<i>' + letters[i] + '</i>';
+                //<i> element content
+                if (letters[i] === ' ') {
+                    letters[i] = (selected) ? '<i class="in space">' + letters[i] + '</i>' : '<i class="space">' + letters[i] + '</i>';
+                } else {
+                    letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>' : '<i>' + letters[i] + '</i>';
+                }
             }
             var newLetters = letters.join('');
             word.html(newLetters).css('opacity', 1);
