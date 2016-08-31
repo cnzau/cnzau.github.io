@@ -33,20 +33,25 @@ body {
     padding-bottom: 1em;
 }
 
-#cooking {
+#i_am_a {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin-top: 0.6em;
     color: #2199e8;
+    padding: 0.15em 0.2em;
 }
 
-#cooking p {
+#i_am_a p {
     margin: 0;
     line-height: 1em;
 }
 
-#cooking span {
+#i_am_a span {
     color: #ffffff;
+}
+
+.space {
+    width: 4px;
 }
 
 #name {
