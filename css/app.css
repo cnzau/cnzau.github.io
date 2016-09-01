@@ -42,6 +42,12 @@ body {
     margin-top: 0.6em;
     color: #2199e8;
     padding: 0.15em 0.2em;
+    line-height: 0;
+}
+
+#i_am_a h6 {
+    margin: 0;
+    line-height: 1.2em;
 }
 
 #i_am_a p {
@@ -50,11 +56,17 @@ body {
 }
 
 #i_am_a span {
-    color: #ffffff;
+    color: #EDEDED;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
 }
 
 .space {
     width: 4px;
+}
+
+.cd-words-wrapper > p > i {
+    padding-right: 1.1px;
 }
 
 .cd-words-wrapper {
