@@ -1,10 +1,15 @@
 $(document).foundation();
-// footer copyright date
+
 window.onload = function myFunction() {
     var d = new Date(),
-        n = d.getFullYear();
+        n = d.getFullYear(),
+        contactform = document.getElementById('contact-form');
+    // footer copyright date
     document.getElementById("yr").innerHTML = n;
+    // set form action
+    contactform.setAttribute('action', '//formspree.io/' + 'clement' + '.' + 'nzau' + '@' + 'email' + '.' + 'com');
 };
+
 // animating my titles in #i_am_a
 jQuery(document).ready(function($) {
     //set animation timing

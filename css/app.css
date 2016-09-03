@@ -510,6 +510,10 @@ h6 {
     font-family: 'Jura', sans-serif;
 }
 
+#_gotcha {
+    display: none;
+}
+
 
 /*****************************************
 Specify fonts with:
