@@ -311,30 +311,30 @@
                     <!-- ============================= CONTACT ============================= -->
                     <div class="tabs-panel" name="contacts" id="contact">
                         <div class="row expanded collapse elevate">
-                            <form id="contact-form" method="post">
+                            <form id="contact-form" method="post" data-abide novalidate>
+                                <div data-abide-error class="alert callout" style="display: none;">
+                                    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Oops! Sorry. There are some errors. Please confirm and submit again.</p>
+                                </div>
                                 <div class="row">
                                     <div class="small-12 medium-12 large-12 columns">
-                                        <div class="form-group">
-                                            <label for="name">
-                                                Name</label>
-                                            <input type="text" class="form-control" id="name" name="sender_name" placeholder="Enter name" required="required" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">
-                                                Email Address</label>
-                                            <div class="input-group">
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                                </span>
-                                                <input type="email" class="form-control" id="email" name="_replyto" placeholder="Enter email" required="required" />
-                                            </div>
-                                        </div>
+                                        <label for="name">
+                                            Name</label>
+                                        <input type="text" id="name" name="sender_name" placeholder="Enter name" required />
+                                        <span class="form-error">Name required.</span>
+                                    </div>
+                                    <div class="small-12 medium-12 large-12 columns">
+                                        <label for="email">
+                                            Email Address</label>
+                                        <input type="email" id="email" name="_replyto" placeholder="Enter email" required />
+                                        <span class="form-error">Valid email required.</span>
                                     </div>
                                     <input type="hidden" name="_subject" value="Let's talk @ cnzau.github.io" />
                                     <div class="small-12 medium-12 large-12 columns">
                                         <div class="form-group">
                                             <label for="name">
                                                 Message</label>
-                                            <textarea name="message" id="message" name="message" class="form-control" rows="5" required="required" placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" name="message" rows="2" required placeholder="Message"></textarea>
+                                            <span class="form-error">Message required.</span>
                                         </div>
                                     </div>
                                     <input type="text" name="_gotcha" id="_gotcha" />
