@@ -510,8 +510,16 @@ h6 {
     font-family: 'Jura', sans-serif;
 }
 
+.cont {
+    font-size: small;
+}
+
 #_gotcha {
     display: none;
+}
+
+.callout {
+    border: none;
 }
 
 
