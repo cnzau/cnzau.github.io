@@ -172,6 +172,17 @@ jQuery(document).ready(function($) {
     }
 });
 
+// JavaScript for label effects only
+$(window).load(function() {
+    $(".input-effect input, .input-effect textarea").focusout(function() {
+        if ($(this).val() != "") {
+            $(this).addClass("has-content");
+        } else {
+            $(this).removeClass("has-content");
+        }
+    })
+});
+
 // textarea auto-expand
 $(document)
     .on('focus.textarea', '.autoExpand', function() {
