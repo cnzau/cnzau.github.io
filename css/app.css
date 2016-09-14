@@ -5,6 +5,7 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     height: 100%;
+    color: #2E282A;
 }
 
 
@@ -270,13 +271,13 @@ h1.myName {
 /************************************ SIDEBAR ****************************************/
 
 .kichwa {
-    background: #fff url(../img/dot_bg.png) repeat left top;
+    background-image: url(../img/fake_brick.png);
     height: 100vh;
     position: fixed;
 }
 
 .k_overlay {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.3);
     min-height: 100vh;
     max-height: 100vh;
 }
@@ -376,7 +377,7 @@ h1.myName {
 }
 
 .tabs-title > a[aria-selected='true'] {
-    background: rgba(230, 230, 230, 0.4);
+    background: rgba(241, 240, 234, 0.3);
 }
 
 .tabs-title > a:hover,
@@ -431,7 +432,7 @@ h1.myName {
 /********************************** CONTENT *********************************/
 
 .mwili {
-    background: #fff url(../img/diamond_upholstery.png) repeat left top;
+    background-color: #F1F0EA;
     height: 90vh;
     position: fixed;
     bottom: 0;
@@ -446,7 +447,7 @@ h1.myName {
 .folio {
     height: 46%;
     width: 100%;
-    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(0, 0, 255, 0.3) inset;
+    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(224, 221, 207, 1) inset;
     margin-bottom: 2%;
     border-radius: 0.3em;
     font-size: medium;
@@ -486,7 +487,7 @@ h1.myName {
     margin-bottom: 2%;
     padding: 1em;
     border-radius: 0.3em;
-    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(0, 0, 255, 0.3) inset;
+    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(224, 221, 207, 1) inset;
 }
 
 ul.none {
@@ -533,7 +534,7 @@ h6 {
 
 .cl {
     position: relative;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
 }
 
 
