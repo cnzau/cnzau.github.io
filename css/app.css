@@ -447,7 +447,7 @@ h1.myName {
 .folio {
     height: 46%;
     width: 100%;
-    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(224, 221, 207, 1) inset;
+    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(224, 221, 207, 0.6) inset;
     margin-bottom: 2%;
     border-radius: 0.3em;
     font-size: medium;
@@ -487,7 +487,7 @@ h1.myName {
     margin-bottom: 2%;
     padding: 1em;
     border-radius: 0.3em;
-    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(224, 221, 207, 1) inset;
+    box-shadow: 0.5vh 0.5vh 40vh 5vh rgba(224, 221, 207, 0.6) inset;
 }
 
 ul.none {

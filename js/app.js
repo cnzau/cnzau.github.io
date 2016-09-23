@@ -7,7 +7,7 @@ window.onload = function myFunction() {
     // footer copyright date
     document.getElementById("yr").innerHTML = n;
     // set form action
-    contactform.setAttribute('action', '//formspree.io/' + 'clement' + '.' + 'nzau' + '@' + 'email' + '.' + 'com');
+    contactform.setAttribute('action', '//formspree.io/' + 'clement' + '.' + 'nzau' + '@' + 'gmail' + '.' + 'com');
 };
 
 // animating my titles in #i_am_a
