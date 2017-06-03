@@ -291,29 +291,17 @@ h1.myName {
     padding-left: 0.15em;
 }
 
-.blog {
-    display: table;
-    width: 100%;
-}
-
-.blog > a {
-    display: table-cell;
-    width: 16.66vw;
-}
-
 
 /*Small screens, max-width 640px*/
 
 @media only screen and (max-width: 40em) {
-    .tabs-title > a,
-    .blog > a {
+    .tabs-title > a {
         font-size: 0.75em;
         padding: 0;
         height: 2.5em;
         line-height: 0.8em;
     }
-    .tabs-title > a > span:before,
-    .blog > a > span:before {
+    .tabs-title > a > span:before {
         content: "\a";
         white-space: pre;
     }
@@ -326,16 +314,14 @@ h1.myName {
 /*Medium screens, min-width 641px, max-width 1024px*/
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    .tabs-title > a,
-    .blog > a {
+    .tabs-title > a {
         font-size: 1em;
         padding-left: 0.9em;
         padding-right: 0;
         height: 4em;
         line-height: 1em;
     }
-    .tabs-title > a > span:before,
-    .blog > a > span:before {
+    .tabs-title > a > span:before {
         content: "\a";
         white-space: pre;
     }
@@ -348,14 +334,12 @@ h1.myName {
 /*Large screens, min-width 1025px*/
 
 @media only screen and (min-width: 64.063em) {
-    .tabs-title > a,
-    .blog > a {
+    .tabs-title > a {
         font-size: 1em;
         height: 4em;
         line-height: 1em;
     }
-    .tabs-title > a > span:before,
-    .blog > a > span:before {
+    .tabs-title > a > span:before {
         content: "\a";
     }
     #tabs-title > a {
@@ -364,13 +348,9 @@ h1.myName {
     #left-sidebar {
         padding-left: 1em;
     }
-    .blog > a {
-        padding-left: 1.5rem;
-    }
 }
 
-.tabs-title > a,
-.blog > a {
+.tabs-title > a {
     font-family: 'BenchNine', sans-serif;
     font-weight: 600;
 }
@@ -379,8 +359,7 @@ h1.myName {
     background: rgba(241, 240, 234, 0.3);
 }
 
-.tabs-title > a:hover,
-.blog > a:hover {
+.tabs-title > a:hover {
     background: rgba(0, 0, 0, 0.4);
 }
 
@@ -610,6 +589,22 @@ textarea:focus,
     transition: 0.3s;
 }
 
+.blogs{
+    height: 6em;
+    margin-bottom: 1em;
+}
+
+.jekyll {
+    background-image: url(../img/jekyllB.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.medium {
+    background-image: url(../img/mediumB.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
 
 /*****************************************
 Specify fonts with:
