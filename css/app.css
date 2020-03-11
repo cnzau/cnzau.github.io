@@ -34,7 +34,7 @@ a:hover {
   z-index: -1;
 }
 .cb-slideshow:after {
-  content: "";
+  content: '';
   background: transparent url(../images/pattern.png) repeat top left;
 }
 .cb-slideshow li span {
@@ -71,7 +71,7 @@ a:hover {
   animation: titleAnimation 24s linear infinite 0s;
 }
 .cb-slideshow li div h3 {
-  font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif;
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
   font-size: 160px;
   padding: 0 30px;
   line-height: 120px;
@@ -400,41 +400,42 @@ i {
 
 #i_am_a span {
   color: #ededed;
-  font-family: "Share Tech Mono", monospace;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 1em;
 }
 
 .space {
-  width: 4px;
+  width: 1rem;
 }
 
-.cd-words-wrapper > b > i {
-  padding-right: 1.1px;
+.cd-words-wrapper > p > i {
+  /* padding-right: 1.1px; */
 }
 
 .cd-words-wrapper {
   display: inline-block;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 
-.cd-words-wrapper b {
+.cd-words-wrapper p {
   display: inline-block;
   position: absolute;
   white-space: nowrap;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.cd-words-wrapper b.is-visible {
-  position: relative;
+.cd-words-wrapper p.is-visible {
+  /* position: relative; */
 }
 
-.no-js .cd-words-wrapper b {
+.no-js .cd-words-wrapper p {
   opacity: 0;
 }
 
-.no-js .cd-words-wrapper b.is-visible {
+.no-js .cd-words-wrapper p.is-visible {
   opacity: 1;
 }
 
@@ -444,7 +445,7 @@ i {
   perspective: 300px;
 }
 
-.cd-headline.rotate-3 b {
+.cd-headline.rotate-3 p {
   opacity: 0;
 }
 
