@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+$primary-color: #00ffff;
+
+body {
+  color: #fff;
+  margin: 0;
+}
+
+.brand {
+  border-left: 4px solid $primary-color;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:before {
+    content: '◗';
+    color: $primary-color;
+    position: absolute;
+    left: -10px;
+    font-size: x-large;
+  }
+}
