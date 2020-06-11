@@ -1,5 +1,8 @@
 import React from 'react';
 import './Default.scss';
+import Navbar from '../components/Navbar';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
 
 const Default = () => {
   return (
@@ -18,6 +21,9 @@ const Default = () => {
           <span></span>
         </li>
       </ul>
+      <Navbar />
+      <Main />
+      <Footer />
     </>
   );
 };

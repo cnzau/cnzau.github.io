@@ -17,7 +17,8 @@
     left: 0px;
     z-index: -1;
     content: '';
-    background: transparent url(../images/pattern.png) repeat top left;
+    background-color: rgba(0, 0, 0, 0.6);
+    // background: transparent url(../images/pattern.png) repeat top left;
   }
 
   li {
