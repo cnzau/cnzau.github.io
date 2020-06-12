@@ -3,15 +3,14 @@ import {
   MDBNavbar,
   MDBNavbarBrand,
   MDBNavbarNav,
-  MDBNavbarToggler,
-  MDBCollapse,
   MDBNavItem,
   MDBNavLink,
+  MDBCollapse,
+  MDBHamburgerToggler,
 } from 'mdbreact';
-
 import { BrowserRouter as Router } from 'react-router-dom';
 
-const Navbar = () => {
+const NavbarPage = () => {
   const [collapse, setCollapse] = useState(false);
 
   const toggle = () => setCollapse(!collapse);
@@ -34,17 +33,17 @@ const Navbar = () => {
               timothy
             </div>
           </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={toggle} />
+          <MDBHamburgerToggler id='hamburger1' onClick={toggle} />
           <MDBCollapse isOpen={collapse} navbar>
-            <MDBNavbarNav right className='z-depth-1'>
+            <MDBNavbarNav right>
               <MDBNavItem active>
-                <MDBNavLink to='#'>Home</MDBNavLink>
+                <MDBNavLink to='#!'>Home</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to='#'>About</MDBNavLink>
+                <MDBNavLink to='#!'>About</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to='#'>Work</MDBNavLink>
+                <MDBNavLink to='#!'>Work</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>
@@ -54,4 +53,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarPage;

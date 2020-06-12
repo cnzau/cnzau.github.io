@@ -1,13 +1,14 @@
 import React from 'react';
 import './Default.scss';
-import Navbar from '../components/Navbar';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
+import FloatButton from '../components/FloatButton';
+import NavbarPage from '../components/NavbarPage';
 
 const Default = () => {
   return (
     <>
-      <ul class='cb-slideshow'>
+      <ul className='cb-slideshow'>
         <li>
           <span></span>
         </li>
@@ -21,8 +22,9 @@ const Default = () => {
           <span></span>
         </li>
       </ul>
-      <Navbar />
+      <NavbarPage />
       <Main />
+      <FloatButton />
       <Footer />
     </>
   );

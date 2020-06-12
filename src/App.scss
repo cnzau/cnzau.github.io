@@ -53,6 +53,10 @@ body {
   .nav-item.active .nav-link {
     color: $accent-color !important;
   }
+  .hamburger-button__button,
+  .hamburger-button__checkbox {
+    display: none;
+  }
 }
 
 footer a {
