@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -11,65 +11,47 @@ import {
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
-class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      collapse: false,
-    };
-    this.onClick = this.onClick.bind(this);
-  }
+const Navbar = () => {
+  const [collapse, setCollapse] = useState(false);
 
-  onClick() {
-    this.setState({
-      collapse: !this.state.collapse,
-    });
-  }
+  const toggle = () => setCollapse(!collapse);
 
-  render() {
-    const bgPink = {
-      // backgroundColor: '#e91e63'
-    };
-    // const container = { height: 1300 };
-    return (
-      <div>
-        <Router>
-          <header>
-            <MDBNavbar
-              style={bgPink}
-              dark
-              expand='md'
-              className='z-depth-0'
-              scrolling
-              fixed='top'
-            >
-              <MDBNavbarBrand href='/'>
-                <div className='brand z-depth-1 hoverable'>
-                  clement <br />
-                  nzau <br />
-                  timothy
-                </div>
-              </MDBNavbarBrand>
-              <MDBNavbarToggler onClick={this.onClick} />
-              <MDBCollapse isOpen={this.state.collapse} navbar>
-                <MDBNavbarNav right className='z-depth-1'>
-                  <MDBNavItem active>
-                    <MDBNavLink to='#'>Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to='#'>About</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to='#'>Work</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBNavbar>
-          </header>
-        </Router>
-      </div>
-    );
-  }
-}
+  return (
+    <Router>
+      <header>
+        <MDBNavbar
+          dark
+          color={collapse && 'elegant-color'}
+          expand='md'
+          className='z-depth-0'
+          scrolling
+          fixed='top'
+        >
+          <MDBNavbarBrand href='/'>
+            <div className='brand z-depth-1 hoverable'>
+              clement <br />
+              nzau <br />
+              timothy
+            </div>
+          </MDBNavbarBrand>
+          <MDBNavbarToggler onClick={toggle} />
+          <MDBCollapse isOpen={collapse} navbar>
+            <MDBNavbarNav right className='z-depth-1'>
+              <MDBNavItem active>
+                <MDBNavLink to='#'>Home</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to='#'>About</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to='#'>Work</MDBNavLink>
+              </MDBNavItem>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBNavbar>
+      </header>
+    </Router>
+  );
+};
 
 export default Navbar;

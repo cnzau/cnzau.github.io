@@ -5,31 +5,17 @@ $accent-color: #00ffff;
 .accent {
   color: $accent-color;
 }
+
 body {
   color: #fff;
   margin: 0;
 }
-@media (min-width: 768px) {
-  .nav-item.active .nav-link {
-    color: $accent-color !important;
-  }
-}
-footer a {
-  color: #fff;
-  font-size: 1em;
-  &:hover {
-    color: $accent-color;
-  }
-}
 
 .brand {
-  // border-left: 4px solid $accent-color;
   background-color: rgba(0, 0, 0, 0.1);
-  // box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
   width: fit-content;
-  // padding: 0 2px;
   display: flex;
   align-items: center;
   font-family: 'Kanit', sans-serif;
@@ -43,20 +29,37 @@ footer a {
 
   &:before,
   &:after {
+    // ●\25CF◗\25D7❂\2742⊛\229B⊕\2295⊖\2296⊘\2298
     content: '\2742';
     color: #d3d3d3;
-    // position: absolute;
-    // left: -10px;
-    // font-size: x-large;
   }
-
-  // &:after {
-  //   content: '\2742';
-  //   color: #c0c0c0;
-  // position: absolute;
-  // right: 0px;
-  // font-size: x-large;
-  // }
 }
 
-// ●\25CF◗\25D7❂\2742⊛\229B⊕\2295⊖\2296⊘\2298
+@media (max-width: 767.98px) {
+  .collapse.show {
+    height: calc(100vh - 74px);
+  }
+
+  .navbar-nav {
+    margin: 25% auto 75% auto;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-item.active .nav-link {
+    color: $accent-color !important;
+  }
+}
+
+footer a {
+  color: #fff;
+  font-size: 1em;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
