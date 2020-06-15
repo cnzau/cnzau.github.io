@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBIcon, MDBBtn, MDBContainer } from 'mdbreact';
+import { MDBIcon, MDBContainer } from 'mdbreact';
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
           rel='noopener noreferrer'
           className='p-2'
         >
-          <MDBIcon fab icon='facebook' size='2x' />
+          <MDBIcon fab icon='facebook-f' size='2x' />
         </a>
         <a
           href='https://twitter.com/clement_nzau'
@@ -53,72 +53,12 @@ const Footer = () => {
         >
           <MDBIcon fab icon='twitter' size='2x' />
         </a>
-        <div className='my-3'>
-          &copy; <span id='yr'>2020</span> &nbsp; Clement Nzau Timothy.
-        </div>
+        <p className='my-3'>
+          <small>
+            &copy; <span id='yr'>2020</span> &nbsp; Clement Nzau Timothy.
+          </small>
+        </p>
       </MDBContainer>
-      {/* <ul className='nav justify-content-center' id='social-links'>
-        <li className='nav-item'>
-          <a
-            className='nav-link'
-            href='https://ke.linkedin.com/in/clementnzau'
-            target='_BLANK'
-            rel='noopener noreferrer'
-          >
-            <i class='fab fa-linkedin-in fa-2x'></i>
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a
-            className='nav-link'
-            href='https://github.com/cnzau'
-            target='_BLANK'
-            rel='noopener noreferrer'
-          >
-            <i class='fab fa-github fa-2x'></i>
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a
-            href='http://stackoverflow.com/users/6154384/c-nzau'
-            target='_BLANK'
-            rel='noopener noreferrer'
-          >
-            <MDBIcon fab icon='stack-overflow' />
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a
-            className='nav-link'
-            href='https://medium.com/@cnzau'
-            target='_BLANK'
-            rel='noopener noreferrer'
-          >
-            <i class='fab fa-medium-m fa-2x'></i>
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a
-            className='nav-link'
-            href='https://www.facebook.com/nzauclement'
-            target='_BLANK'
-            rel='noopener noreferrer'
-          >
-            <i class='fab fa-facebook fa-2x'></i>
-          </a>
-        </li>
-        <li className='nav-item'>
-          <a
-            className='nav-link'
-            href='https://twitter.com/clement_nzau'
-            target='_BLANK'
-            rel='noopener noreferrer'
-          >
-            <i class='fab fa-twitter fa-2x'></i>
-          </a>
-        </li>
-      </ul>
-      &copy; <span id='yr'>2020</span> &nbsp; Clement Nzau Timothy. */}
     </footer>
   );
 };
