@@ -1,15 +1,7 @@
 import React from 'react';
 import Typing from 'react-typing-animation';
 import TextLoop from 'react-text-loop';
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardTitle,
-  MDBCardBody,
-  MDBCardText,
-} from 'mdbreact';
+import { MDBContainer, MDBCard } from 'mdbreact';
 import portrait from '../images/clement.png';
 
 const Jumbotron = () => {
@@ -22,11 +14,9 @@ const Jumbotron = () => {
     >
       <MDBCard
         size='md'
-        className='p-2 mx-auto'
+        className='p-3 mx-auto bg-1'
         style={{
-          // display: 'inline blockblock',
-          backgroundColor: 'rgba(0,0,0,0.1)',
-          width: '40vw',
+          width: '250px',
         }}
       >
         <div className='mx-auto'>
@@ -45,9 +35,9 @@ const Jumbotron = () => {
           <Typing cursorClassName='my-accent-color' speed={1}>
             <p>Hi, </p>
             <Typing.Delay ms={500} />
-            <h6>I am: Clement Nzau.</h6>
+            <h6 className='text-center my-3'>I am Clement Nzau.</h6>
             <Typing.Delay ms={500} />
-            <h6>
+            <h6 className='text-center my-3'>
               I am a{' '}
               <TextLoop>
                 <span>Sofware Engineer</span>

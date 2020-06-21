@@ -8,48 +8,77 @@ import {
   MDBCollapse,
   MDBHamburgerToggler,
 } from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 const NavbarPage = () => {
-  const [collapse, setCollapse] = useState(false);
+  const [state, setState] = useState({
+    collapse: false,
+    collapseID: '',
+  });
 
-  const toggle = () => setCollapse(!collapse);
+  const toggleSingleCollapse = (collapseId) => {
+    setState({
+      ...state,
+      [collapseId]: !state[collapseId],
+    });
+  };
 
   return (
-    <Router>
-      <header>
-        <MDBNavbar
-          dark
-          color={collapse && 'elegant-color'}
-          expand='md'
-          className='z-depth-0'
-          scrolling
-          fixed='top'
-        >
-          <MDBNavbarBrand href='/'>
-            <div className='brand z-depth-1 hoverable'>
-              clement <br />
-              nzau <br />
-              timothy
-            </div>
-          </MDBNavbarBrand>
-          <MDBHamburgerToggler id='hamburger1' onClick={toggle} />
-          <MDBCollapse isOpen={collapse} navbar>
-            <MDBNavbarNav right>
-              <MDBNavItem active>
-                <MDBNavLink to='#!'>Home</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to='#!'>About</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to='#!'>Work</MDBNavLink>
-              </MDBNavItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBNavbar>
-      </header>
-    </Router>
+    <header>
+      <MDBNavbar
+        dark
+        color={state.collapse ? 'elegant-color' : ''}
+        expand='md'
+        className='z-depth-0'
+        scrolling
+        fixed='top'
+      >
+        <MDBNavbarBrand href='/'>
+          <div className='brand bg-1 z-depth-1 hoverable'>
+            clement <br />
+            nzau <br />
+            timothy
+          </div>
+        </MDBNavbarBrand>
+        <MDBHamburgerToggler
+          id='hamburger1'
+          onClick={() => toggleSingleCollapse('collapse')}
+        />
+        <MDBCollapse isOpen={state.collapse} navbar>
+          <MDBNavbarNav right>
+            <MDBNavItem>
+              <MDBNavLink
+                to='/home'
+                onClick={
+                  state.collapse ? () => toggleSingleCollapse('collapse') : null
+                }
+              >
+                Home
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink
+                to='/contact'
+                onClick={
+                  state.collapse ? () => toggleSingleCollapse('collapse') : null
+                }
+              >
+                About
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink
+                to='/work'
+                onClick={
+                  state.collapse ? () => toggleSingleCollapse('collapse') : null
+                }
+              >
+                Work
+              </MDBNavLink>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
+    </header>
   );
 };
 
