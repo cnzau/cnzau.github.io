@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouteMatch } from 'react-router-dom';
 import './Default.scss';
 import Main from '../components/Main';
 import Footer from '../components/Footer';
@@ -24,7 +25,7 @@ const Default = () => {
       </ul>
       <NavbarPage />
       <Main />
-      <FloatButton />
+      {!useRouteMatch('/contact') && <FloatButton />}
       <Footer />
     </>
   );

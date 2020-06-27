@@ -4,10 +4,10 @@ import { MDBBtn, MDBIcon } from 'mdbreact';
 const FloatButton = () => {
   return (
     <MDBBtn
-      //   tabindex
       tag='a'
+      href='/contact'
       size='lg'
-      className='btn-floating'
+      className='btn-floating '
       style={{
         borderRadius: '50%',
         height: '50px',
@@ -15,12 +15,10 @@ const FloatButton = () => {
         position: 'fixed',
         bottom: '45px',
         right: '24px',
-
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         zIndex: 1,
-        //   display: 'inline-block',
         padding: 0,
         margin: '10px',
         overflow: 'hidden',
@@ -28,7 +26,6 @@ const FloatButton = () => {
         transition: 'all .2s ease-in-out',
         backgroundColor: '#00ffff',
       }}
-      // gradient='purple'
     >
       <MDBIcon
         icon='envelope'

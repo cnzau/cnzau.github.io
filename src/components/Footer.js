@@ -46,7 +46,7 @@ const Footer = () => {
           <MDBIcon fab icon='facebook-f' size='2x' />
         </a>
         <a
-          href='https://twitter.com/clement_nzau'
+          href='https://twitter.com/nzau_clement'
           target='_BLANK'
           rel='noopener noreferrer'
           className='p-2'
