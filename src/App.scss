@@ -126,3 +126,73 @@ footer a {
     color: $accent-color;
   }
 }
+
+.scroll-down {
+  font-size: 10px;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mouse {
+  width: 1.5rem;
+  height: 2.5rem;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+
+.mouse span {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1s linear infinite;
+}
+
+.arrow span {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  transform: rotate(45deg);
+  animation: arrow-down 0.5s alternate infinite;
+}
+
+@keyframes move-wheel {
+  0% {
+    oppacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    oppacity: 1;
+    transform: translateY(1rem);
+  }
+}
+@keyframes arow-down {
+  0% {
+    oppacity: 0;
+  }
+  25% {
+    oppacity: 0.25;
+  }
+  50% {
+    oppacity: 0.5;
+  }
+  75% {
+    oppacity: 0.75;
+  }
+  100% {
+    oppacity: 1;
+  }
+}
