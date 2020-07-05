@@ -9,7 +9,7 @@ import NavbarPage from '../components/NavbarPage';
 const Default = () => {
   return (
     <>
-      <ul className='cb-slideshow'>
+      <ul className='bg-slideshow'>
         <li>
           <span></span>
         </li>
