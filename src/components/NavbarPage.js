@@ -34,9 +34,10 @@ const NavbarPage = () => {
       >
         <MDBNavbarBrand href='/'>
           <div className='brand bg-1 z-depth-1 hoverable'>
-            clement <br />
-            nzau <br />
-            timothy
+            <span>⑆</span>
+            <span style={{ marginLeft: '' }}>◣</span>
+            <span style={{ marginLeft: '-16px' }}>◥</span>
+            <span>±</span>
           </div>
         </MDBNavbarBrand>
         <MDBHamburgerToggler

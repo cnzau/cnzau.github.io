@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-
 $accent-color: rgb(0, 255, 255);
 
 .my-accent-color {
   color: $accent-color;
+
   &:hover {
     color: desaturate($accent-color, 50%);
   }
@@ -11,6 +10,7 @@ $accent-color: rgb(0, 255, 255);
 
 .my-text-light {
   color: rgb(224, 224, 224);
+
   &:hover {
     color: $accent-color;
   }
@@ -22,18 +22,22 @@ $accent-color: rgb(0, 255, 255);
 
 .form-control {
   color: #fff;
+
   &:focus {
     color: #fff;
   }
 }
+
 .md-form {
   label {
     color: #fff;
   }
+
   .active {
     color: rgba(255, 255, 255, 0.8);
   }
 }
+
 .md-form input:not([type]):focus:not([readonly]),
 .md-form input[type='text']:not(.browser-default):focus:not([readonly]),
 .md-form input[type='email']:not(.browser-default):focus:not([readonly]),
@@ -42,13 +46,12 @@ $accent-color: rgb(0, 255, 255);
   border-bottom: 1px solid $accent-color;
   box-shadow: 0 1px 0 0 $accent-color;
 }
-.md-form input:not([type]):focus:not([readonly]) + label,
-.md-form input[type='text']:not(.browser-default):focus:not([readonly]) + label,
-.md-form
-  input[type='email']:not(.browser-default):focus:not([readonly])
-  + label,
-.md-form input[type='tel']:not(.browser-default):focus:not([readonly]) + label,
-.md-form textarea.md-textarea:focus:not([readonly]) + label {
+
+.md-form input:not([type]):focus:not([readonly])+label,
+.md-form input[type='text']:not(.browser-default):focus:not([readonly])+label,
+.md-form input[type='email']:not(.browser-default):focus:not([readonly])+label,
+.md-form input[type='tel']:not(.browser-default):focus:not([readonly])+label,
+.md-form textarea.md-textarea:focus:not([readonly])+label {
   color: desaturate($accent-color, 20%);
 }
 
@@ -72,10 +75,12 @@ body {
   width: fit-content;
   display: flex;
   align-items: center;
-  font-family: 'Kanit', sans-serif;
-  font-size: 11px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 20px;
 
   &:hover {
     color: $accent-color;
@@ -83,18 +88,17 @@ body {
 
   &:before,
   &:after {
-    // ●\25CF◗\25D7❂\2742⊛\229B⊕\2295⊖\2296⊘\2298
-    content: '\2742';
-    color: #d3d3d3;
+    // ●\25CF ◖\25D6◗\25D7❂\2742⊛\229B⊕\2295⊖\2296⊘\2298 ◍\25CD ◣\25E3 ◥\25E5 
+    // ⑆\2446 ±\00B1 ⊂\2282 ∩\2229 †\2020 ✝\271D ⊤\22A4 ⊺\22A4 ＋\FF0B ﹢\FE62 ✢\2722
+    // content: '\2742';// color: #d3d3d3;
+    // font-size: 8px;
   }
 }
 
-// .nav-link .active {
-//   background-color: rgba(255, 255, 255, 0.1);
-//   transition: all 0.35s ease 0;
-// }
 .nav-item .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.1);
+  // background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: #0ff !important;
 }
 
 @media (max-width: 767.98px) {
@@ -112,6 +116,7 @@ body {
 }
 
 @media (min-width: 768px) {
+
   .hamburger-button__button,
   .hamburger-button__checkbox {
     display: none;
@@ -174,24 +179,30 @@ footer a {
     oppacity: 0;
     transform: translateY(-1rem);
   }
+
   100% {
     oppacity: 1;
     transform: translateY(1rem);
   }
 }
+
 @keyframes arow-down {
   0% {
     oppacity: 0;
   }
+
   25% {
     oppacity: 0.25;
   }
+
   50% {
     oppacity: 0.5;
   }
+
   75% {
     oppacity: 0.75;
   }
+
   100% {
     oppacity: 1;
   }
