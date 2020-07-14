@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+$accent-color: rgb(0, 255, 255);
+
+.my-accent-color {
+  color: $accent-color;
+  &:hover {
+    color: desaturate($accent-color, 50%);
+  }
+}
+
+.my-text-light {
+  color: rgb(224, 224, 224);
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.bg-1 {
+  background-color: rgba(75, 81, 93, 0.9);
+}
+
+.form-control {
+  color: #fff;
+  &:focus {
+    color: #fff;
+  }
+}
+.md-form {
+  label {
+    color: #fff;
+  }
+  .active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.md-form input:not([type]):focus:not([readonly]),
+.md-form input[type='text']:not(.browser-default):focus:not([readonly]),
+.md-form input[type='email']:not(.browser-default):focus:not([readonly]),
+.md-form input[type='tel']:not(.browser-default):focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid $accent-color;
+  box-shadow: 0 1px 0 0 $accent-color;
+}
+.md-form input:not([type]):focus:not([readonly]) + label,
+.md-form input[type='text']:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type='email']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type='tel']:not(.browser-default):focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: desaturate($accent-color, 20%);
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: #dc3545 !important;
+}
+
+.my-bg-color {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  color: #fff;
+  margin: 0;
+}
+
+.brand {
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:before,
+  &:after {
+    // ●\25CF◗\25D7❂\2742⊛\229B⊕\2295⊖\2296⊘\2298
+    content: '\2742';
+    color: #d3d3d3;
+  }
+}
+
+// .nav-link .active {
+//   background-color: rgba(255, 255, 255, 0.1);
+//   transition: all 0.35s ease 0;
+// }
+.nav-item .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .collapse.show {
+    height: calc(100vh - 74px);
+  }
+
+  .navbar-nav {
+    margin: 25% auto 75% auto;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger-button__button,
+  .hamburger-button__checkbox {
+    display: none;
+  }
+}
+
+footer a {
+  color: #fff;
+  font-size: 1em;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
